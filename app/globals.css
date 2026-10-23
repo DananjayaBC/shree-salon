@@ -1,26 +1,64 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf5f4;
+  --foreground: #2b2b2b;
+  --coral: #f07167;
+  --pink: #f6cfd1;
+  --pink-soft: #fbe3e4;
+  --grey: #6b6b6b;
+  --plum: #6b6b8a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-coral: var(--coral);
+  --color-pink: var(--pink);
+  --color-pink-soft: var(--pink-soft);
+  --color-grey: var(--grey);
+  --color-plum: var(--plum);
+  --font-serif: var(--font-serif), "Cormorant Garamond", Georgia, serif;
+  --font-sans: var(--font-sans-body), Poppins, Inter, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
-  background: var(--background);
+  background: linear-gradient(180deg, #fdf5f4 0%, #ffffff 100%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+.arch {
+  border-radius: 999px 999px 0 0;
+}
+
+.circle-glow {
+  box-shadow: 0 0 0 28px rgba(246, 207, 209, 0.45), 0 0 0 56px rgba(246, 207, 209, 0.2);
+}
+
+.band-curve {
+  border-radius: 50% 50% 50% 50% / 8% 8% 8% 8%;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spin-slow {
+  animation: spin-slow 18s linear infinite;
+}
+
+@media (max-width: 1023px) {
+  .circle-glow {
+    box-shadow: 0 0 0 14px rgba(246, 207, 209, 0.45), 0 0 0 28px rgba(246, 207, 209, 0.2);
+  }
 }
