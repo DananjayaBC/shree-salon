@@ -15,8 +15,8 @@ const sans = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Shree Salon",
-  description: "Shree Salon - The No 1 Salon in Delhi",
+  title: "Salon Apsa",
+  description: "Salon Apsa - The No 1 Salon in Delhi",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

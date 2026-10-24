@@ -54,7 +54,7 @@ export default function Hero() {
               </defs>
               <text fontSize="9" fill="#f07167" letterSpacing="2" fontFamily="Poppins, sans-serif">
                 <textPath href="#ringPath">
-                  BEAUTY SALON • HAIR • SKIN • MAKEUP • BRIDAL • SPA • SHREE SALON DELHI • BEAUTY SALON •
+                  BEAUTY SALON • HAIR • SKIN • MAKEUP • BRIDAL • SPA • SALON APSA DELHI • BEAUTY SALON •
                 </textPath>
               </text>
             </svg>

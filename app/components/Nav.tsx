@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Flower } from "./Decor";
 
 const links = ["Home", "About", "Services", "Our Plans", "Contact"];
 
@@ -11,9 +10,15 @@ export default function Nav() {
   return (
     <header className="mx-auto w-full max-w-[1100px] px-6 py-5">
       <div className="flex items-center justify-between">
-        <a href="#" className="flex items-center gap-1">
-          <Flower size={36} />
-          <span className="font-serif text-[22px] italic text-coral">Shree</span>
+        <a href="#" className="flex items-center gap-2">
+          <img
+            src="/salon-apsa-logo.jpg"
+            alt=""
+            width={52}
+            height={52}
+            className="h-[52px] w-[52px] rounded-full object-cover"
+          />
+          <span className="font-serif text-[22px] italic text-coral">Salon Apsa</span>
         </a>
         <nav className="hidden items-center gap-10 text-[12px] text-foreground md:flex">
           {links.map((l) => (

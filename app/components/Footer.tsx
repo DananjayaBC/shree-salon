@@ -1,5 +1,3 @@
-import { Flower } from "./Decor";
-
 const links = ["Home", "About", "Services", "Our Plans", "Contact"];
 
 export default function Footer() {
@@ -8,9 +6,13 @@ export default function Footer() {
       <div className="mx-auto w-[130%] -translate-x-[11.5%] rounded-t-[50%] bg-pink/60 pb-6 pt-20">
         <div className="mx-auto w-full max-w-[1100px] px-6">
           <div className="flex justify-center">
-            <div className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white">
-              <Flower size={40} />
-            </div>
+            <img
+              src="/salon-apsa-logo.jpg"
+              alt="Salon Apsa"
+              width={120}
+              height={120}
+              className="h-[120px] w-[120px] rounded-full object-cover ring-4 ring-white"
+            />
           </div>
           <div className="mt-14 flex flex-col items-center gap-6 text-center text-[10px] text-foreground lg:flex-row lg:justify-between lg:gap-0 lg:text-left">
             <div className="flex gap-4 text-coral">
@@ -33,7 +35,7 @@ export default function Footer() {
                 </a>
               ))}
             </nav>
-            <p>&copy; 2024 Shree Salon. All Rights Reserved</p>
+            <p>&copy; 2024 Salon Apsa. All Rights Reserved</p>
           </div>
         </div>
       </div>
